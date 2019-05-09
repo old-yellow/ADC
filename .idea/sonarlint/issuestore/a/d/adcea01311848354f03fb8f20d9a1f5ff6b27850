@@ -1,0 +1,7 @@
+
+isquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(µˆ­‘8Ð®ý±©-
+Jsquid:S1068"'Remove this unused "TAG" private field.(€¡‹·ÿÿÿÿÿ8êÇ¬©-
+osquid:S1450"QRemove the "vg" field and declare it as a local variable in the relevant methods.(£ÝƒÓ8ãæ¯©-
+tsquid:S1450"VRemove the "ivPoint" field and declare it as a local variable in the relevant methods.(££Ô8 Çø¯©-
+nsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(þ×ß“ÿÿÿÿÿ8„‹´¯©-
+lsquid:MaximumInheritanceDepth"<This class has 9 parents which is greater than 5 authorized.(ìùçì8¡ç¯©-

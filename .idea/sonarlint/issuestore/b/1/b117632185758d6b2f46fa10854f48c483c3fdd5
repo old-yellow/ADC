@@ -1,0 +1,6 @@
+
+?squid:S1170"!Make this final field static too.(ã ©ž8«Íï©©-
+osquid:S00116"PRename this field "DELAY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã ©ž8«Íï©©-
+lsquid:MaximumInheritanceDepth"<This class has 9 parents which is greater than 5 authorized.(‘Ù±8ŸË¼±©-
+psquid:S1450"SRemove the "task" field and declare it as a local variable in the relevant methods.(Ÿ¾¼u8°Ùý©©-
+usquid:UselessImportCheck"ERemove this unused import 'android.support.v7.app.AppCompatActivity'.(«Û®ûüÿÿÿÿ8ª©«©-
