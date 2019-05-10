@@ -1,8 +1,0 @@
-
-tsquid:S1450"VRemove the "ivPoint" field and declare it as a local variable in the relevant methods.(£ê£‘8†«¯Ø©-
-isquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(µà≠ë8–Æ˝±©-
-osquid:S1450"QRemove the "vg" field and declare it as a local variable in the relevant methods.(£›É”8„ÅÊØ©-
-|squid:S1450"YRemove the "mViewPager" field and declare it as a local variable in the relevant methods.(’Óµ˝˙ˇˇˇˇ8ª∏¡¯©-
-zsquid:S1450"WRemove the "viewList" field and declare it as a local variable in the relevant methods.(Ù‡ÿÜ˚ˇˇˇˇ8ª∏¡¯©-
-esquid:UselessImportCheck"5Remove this unused import 'android.app.ListActivity'.(Ï§ê≤¯ˇˇˇˇ8ª∏¡¯©-
-lsquid:UselessImportCheck"ARemove this unused import 'android.support.v4.view.PagerAdapter'.(ñ¯¶÷8ª∏¡¯©-
