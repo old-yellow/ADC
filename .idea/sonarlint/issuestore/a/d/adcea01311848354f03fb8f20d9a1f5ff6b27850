@@ -1,7 +1,8 @@
 
-isquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(µˆ­‘8Ð®ý±©-
-Jsquid:S1068"'Remove this unused "TAG" private field.(€¡‹·ÿÿÿÿÿ8êÇ¬©-
-osquid:S1450"QRemove the "vg" field and declare it as a local variable in the relevant methods.(£ÝƒÓ8ãæ¯©-
-tsquid:S1450"VRemove the "ivPoint" field and declare it as a local variable in the relevant methods.(££Ô8 Çø¯©-
-nsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(þ×ß“ÿÿÿÿÿ8„‹´¯©-
-lsquid:MaximumInheritanceDepth"<This class has 9 parents which is greater than 5 authorized.(ìùçì8¡ç¯©-
+tsquid:S1450"VRemove the "ivPoint" field and declare it as a local variable in the relevant methods.(££Ô8 Çø¯©-
+isquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(µˆ­‘8Ð®ý±©-
+osquid:S1450"QRemove the "vg" field and declare it as a local variable in the relevant methods.(£ÝƒÓ8ãæ¯©-
+|squid:S1450"YRemove the "mViewPager" field and declare it as a local variable in the relevant methods.(Õîµýúÿÿÿÿ8»¸Áø©-
+zsquid:S1450"WRemove the "viewList" field and declare it as a local variable in the relevant methods.(ôàØ†ûÿÿÿÿ8»¸Áø©-
+esquid:UselessImportCheck"5Remove this unused import 'android.app.ListActivity'.(ì¤²øÿÿÿÿ8»¸Áø©-
+lsquid:UselessImportCheck"ARemove this unused import 'android.support.v4.view.PagerAdapter'.(–ø¦Ö8»¸Áø©-

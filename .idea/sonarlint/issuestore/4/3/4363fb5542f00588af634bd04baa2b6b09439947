@@ -1,8 +1,0 @@
-
-|squid:S1450"YRemove the "mRightView" field and declare it as a local variable in the relevant methods.(ìÚ­øÿÿÿÿ8Ä®Û«©-
-Msquid:S1068"*Remove this unused "mScale" private field.(ÔÈÑ£úÿÿÿÿ8îÂ³«©-
-Ÿsquid:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.( ËİÎ8´¤Å®©-
-Jsquid:S1068"-Remove this unused "SCALE_MAX" private field.(ªİä8ğÕ¹«©-
-Esquid:S1068"'Remove this unused "TAG" private field.(©Ö­ó8¾…º«©-
-Gsquid:S1068"*Remove this unused "mTrans" private field.(ß¬´L8îÂ³«©-
-{squid:S1450"XRemove the "mLeftView" field and declare it as a local variable in the relevant methods.(ë½ò‚ùÿÿÿÿ8Ä®Û«©-

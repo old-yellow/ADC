@@ -1,0 +1,7 @@
+
+{squid:S1450"_Remove the "mFragmentManager" field and declare it as a local variable in the relevant methods.(•Õşÿÿÿÿ
+tsquid:S1450("]Remove the "mNavigationBar" field and declare it as a local variable in the relevant methods.(‡§è¦
+squid:S1186Y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(âÈºùÿÿÿÿ
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Áé•¦øÿÿÿÿ
+@squid:S1148¿"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+esquid:MaximumInheritanceDepth"<This class has 9 parents which is greater than 5 authorized.(‘Ù±
