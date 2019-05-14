@@ -1,0 +1,4 @@
+
+]squid:UselessImportCheck"4Remove this unused import 'android.content.Context'.(©Ê‰è8ß«»ýª-
+Zsquid:UselessImportCheck",Remove this unused import 'android.net.Uri'.(òêû‘ýÿÿÿÿ8ß«»ýª-
+usquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Áé•¦øÿÿÿÿ

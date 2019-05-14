@@ -8,5 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="FirstActivityTheme" parent="AppTheme"></style>
+
+    <style name="HomeTabStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@color/colorWhite</item>
+        <item name="tabIndicatorColor">@color/colorPink</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@color/colorPink</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
 </resources>

@@ -1,0 +1,11 @@
+
+qsquid:S1450"TRemove the "point" field and declare it as a local variable in the relevant methods.(¬õï,8ƒ•ƒª-
+zsquid:S1450"WRemove the "viewList" field and declare it as a local variable in the relevant methods.(ôàØ†ûÿÿÿÿ8Ã÷¾þ©-
+usquid:S1450#"WRemove the "guideEnd" field and declare it as a local variable in the relevant methods.(µ»·ù8—ëý©-
+isquid:UselessImportCheck">Remove this unused import 'android.provider.ContactsContract'.(üç§±8ûììý©-
+{squid:S1450"XRemove the "viewPager" field and declare it as a local variable in the relevant methods.(åÙ¬Ïûÿÿÿÿ8Òûúý©-
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ã•µ‡
+Ksquid:S1068".Remove this unused "pointGroup" private field.(Ò·¦"8øºßý©-
+usquid:UselessImportCheck"ERemove this unused import 'android.support.v7.app.AppCompatActivity'.(«Û®ûüÿÿÿÿ8“Ù¸ü©-
+vsquid:S1450"YRemove the "pointGroup" field and declare it as a local variable in the relevant methods.(Ò·¦"8ÖÄ€ƒª-
+xsquid:S1450"URemove the "points" field and declare it as a local variable in the relevant methods.(©ôÅóüÿÿÿÿ8‹›‰ƒª-

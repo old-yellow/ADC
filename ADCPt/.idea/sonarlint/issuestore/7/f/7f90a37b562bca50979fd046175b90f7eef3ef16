@@ -1,0 +1,6 @@
+
+|squid:S1450"YRemove the "mViewPager" field and declare it as a local variable in the relevant methods.(Õîµıúÿÿÿÿ8óª€«-
+Gsquid:S1185…"(Remove this method to simply inherit it.(ÍÙ÷¢8óª€«-
+osquid:S1450"QRemove the "vg" field and declare it as a local variable in the relevant methods.(£İƒÓ8óª€«-
+zsquid:S1450"WRemove the "viewList" field and declare it as a local variable in the relevant methods.(ôàØ†ûÿÿÿÿ8óª€«-
+tsquid:S1450"VRemove the "ivPoint" field and declare it as a local variable in the relevant methods.(££Ô8óª€«-

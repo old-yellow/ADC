@@ -1,8 +1,8 @@
 
-usquid:S1450"YRemove the "mViewPager" field and declare it as a local variable in the relevant methods.(Õîµıúÿÿÿÿ
-ssquid:S1450"WRemove the "viewList" field and declare it as a local variable in the relevant methods.(ôàØ†ûÿÿÿÿ
-hsquid:S1450"QRemove the "vg" field and declare it as a local variable in the relevant methods.(£İƒÓ
 msquid:S1450 "VRemove the "ivPoint" field and declare it as a local variable in the relevant methods.(££Ô
-@squid:S1185†"(Remove this method to simply inherit it.(ÍÙ÷¢
+ssquid:S1450"WRemove the "viewList" field and declare it as a local variable in the relevant methods.(ôàØ†ûÿÿÿÿ
 wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Áé•¦øÿÿÿÿ
+usquid:S1450"YRemove the "mViewPager" field and declare it as a local variable in the relevant methods.(Õîµıúÿÿÿÿ
 rsquid:UselessImportCheck"NRemove this unused import 'com.example.administrator.adcpt.Base.BaseActivity'.(ÜŞÚ
+@squid:S1185†"(Remove this method to simply inherit it.(ÍÙ÷¢
+hsquid:S1450"QRemove the "vg" field and declare it as a local variable in the relevant methods.(£İƒÓ

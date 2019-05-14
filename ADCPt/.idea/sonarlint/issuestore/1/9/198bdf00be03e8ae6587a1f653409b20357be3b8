@@ -1,7 +1,6 @@
 
-isquid:S1450"SRemove the "task" field and declare it as a local variable in the relevant methods.(Ÿ¾¼u
-8squid:S1170"!Make this final field static too.(ã ©
-?squid:S11851"(Remove this method to simply inherit it.(ÍÙ÷¢
-hsquid:S00116"PRename this field "DELAY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã ©
+8squid:S1170"!Make this final field static too.(ã ©
+isquid:S1450"SRemove the "task" field and declare it as a local variable in the relevant methods.(Ÿ¾¼u
+hsquid:S00116"PRename this field "DELAY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã ©
+hsquid:UselessImportCheck"8Remove this unused import 'android.widget.LinearLayout'.(çîšçúÿÿÿÿ8‡ş»‚ª-
 wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Áé•¦øÿÿÿÿ
-rsquid:UselessImportCheck"NRemove this unused import 'com.example.administrator.adcpt.Base.BaseActivity'.(ÜŞÚ

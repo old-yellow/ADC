@@ -1,4 +1,4 @@
-package com.example.administrator.adcpt.UI;
+package com.example.administrator.adcpt.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,8 +14,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.example.administrator.adcpt.Base.BaseActivity;
-import com.example.administrator.adcpt.Adapter.GuideAdapter;
+import com.example.administrator.adcpt.adapter.GuideAdapter;
 import com.example.administrator.adcpt.R;
 
 import java.util.ArrayList;

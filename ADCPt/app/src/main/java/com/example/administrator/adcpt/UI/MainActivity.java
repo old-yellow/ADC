@@ -1,29 +1,37 @@
-package com.example.administrator.adcpt.UI;
+package com.example.administrator.adcpt.ui;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v7.widget.Toolbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.view.Display;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
-import com.example.administrator.adcpt.Base.ActivityCollector;
-import com.example.administrator.adcpt.Base.BaseActivity;
+import com.example.administrator.adcpt.base.ActivityCollector;
+import com.example.administrator.adcpt.base.BaseActivity;
 import com.example.administrator.adcpt.R;
+
+import java.lang.reflect.Field;
 
 public class MainActivity extends BaseActivity {
 
     //包含的四个页面
-    private FragmentManager mFragmentManager;
+
 
     private Fragment homeFragment;
 
@@ -33,34 +41,22 @@ public class MainActivity extends BaseActivity {
 
     private Fragment protossFragment;
 
-    //页面标题栏
-    private Toolbar toolbar;
-
-    //底部导航栏
-    private BottomNavigationBar mNavigationBar;
-
-    private int lastSelectedPosition = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //去掉标题栏
-        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-        //设置自定义标题栏
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         NavigationView navView = (NavigationView) findViewById(R.id.nav_view);
         //设置抽屉适配屏幕占比
-        setDrawerScale(this, navView, 0.65);
+        setDrawerScale(this, navView, 0.75);
         //设置底部导航栏
         init();
-
     }
 
     private void init() {
-        mNavigationBar = (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar);
 
+        //底部导航栏
+        BottomNavigationBar mNavigationBar = (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar);
         //设置模式
         mNavigationBar.setMode(BottomNavigationBar.MODE_FIXED);
         //添加导航栏的图标、文字
@@ -75,8 +71,9 @@ public class MainActivity extends BaseActivity {
                         .setInactiveIconResource(R.drawable.bottom_icon2))
                 .addItem(new BottomNavigationItem(R.drawable.bottom_icon3_1, "星灵")
                         .setInactiveIconResource(R.drawable.bottom_icon3))
-                .setFirstSelectedPosition(lastSelectedPosition)
+                .setFirstSelectedPosition(0)
                 .initialise();
+        setBottomNavigationItem(mNavigationBar, 6,26, 10);
         //默认出现的界面
         setDefaultView();
 
@@ -86,7 +83,6 @@ public class MainActivity extends BaseActivity {
             public void onTabSelected(int position) {
                 //选中页面设置页面和标题
                 initFragment(position);
-                initToolbar(position);
             }
 
             @Override
@@ -95,16 +91,60 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void onTabReselected(int position) {
-                //重新选中界面只需要重新设置标题
-                initToolbar(position);
             }
         });
 
     }
 
+    private void setBottomNavigationItem(BottomNavigationBar bottomNavigationBar, int space, int imgLen, int textSize){
+        Class barClass = bottomNavigationBar.getClass();
+        Field[] fields = barClass.getDeclaredFields();
+        for(int i = 0; i < fields.length; i++){
+            Field field = fields[i];
+            field.setAccessible(true);
+            if(field.getName().equals("mTabContainer")){
+                try{
+                    //反射得到 mTabContainer
+                    LinearLayout mTabContainer = (LinearLayout) field.get(bottomNavigationBar);
+                    for(int j = 0; j < mTabContainer.getChildCount(); j++){
+                        //获取到容器内的各个Tab
+                        View view = mTabContainer.getChildAt(j);
+                        //获取到Tab内的各个显示控件
+                        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dip2px(56));
+                        FrameLayout container = (FrameLayout) view.findViewById(R.id.fixed_bottom_navigation_container);
+                        container.setLayoutParams(params);
+                        container.setPadding(dip2px(12), dip2px(0), dip2px(12), dip2px(0));
+
+                        //获取到Tab内的文字控件
+                        TextView labelView = (TextView) view.findViewById(com.ashokvarma.bottomnavigation.R.id.fixed_bottom_navigation_title);
+                        //计算文字的高度DP值并设置，setTextSize为设置文字正方形的对角线长度，所以：文字高度（总内容高度减去间距和图片高度）*根号2即为对角线长度，此处用DP值，设置该值即可。
+                        labelView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, textSize);
+                        labelView.setIncludeFontPadding(false);
+                        labelView.setPadding(0,0,0,dip2px(20-textSize - space/2));
+
+                        //获取到Tab内的图像控件
+                        ImageView iconView = (ImageView) view.findViewById(com.ashokvarma.bottomnavigation.R.id.fixed_bottom_navigation_icon);
+                        //设置图片参数，其中，MethodUtils.dip2px()：换算dp值
+                        params = new FrameLayout.LayoutParams(dip2px(imgLen), dip2px(imgLen));
+                        params.setMargins(0,0,0,space/2);
+                        params.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+                        iconView.setLayoutParams(params);
+                    }
+                } catch (IllegalAccessException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public int dip2px(float dpValue) {
+        final float scale = getApplication().getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
+    }
+
     //初始化相应界面，实现了fragment的懒加载
     private void initFragment(int position) {
-        mFragmentManager = getFragmentManager();
+        FragmentManager mFragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
         //先隐藏再加载
         hideFragment(fragmentTransaction);
@@ -157,30 +197,9 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    //初始化相应标题栏
-    private void initToolbar(int position) {
-        switch (position) {
-            case 0:
-                toolbar.setTitle(R.string.home);
-
-                break;
-            case 1:
-                toolbar.setTitle(R.string.zerg);
-                break;
-            case 2:
-                toolbar.setTitle(R.string.terran);
-                break;
-            case 3:
-                toolbar.setTitle(R.string.protoss);
-                break;
-            default:
-                toolbar.setTitle(R.string.home);
-        }
-    }
 
     private void setDefaultView() {
         initFragment(0);
-        initToolbar(0);
     }
 
     public static void setDrawerScale(Activity activity, View navView, double displayWidthPercentage) {
@@ -207,4 +226,6 @@ public class MainActivity extends BaseActivity {
         super.onDestroy();
         ActivityCollector.finishAll();
     }
+
+
 }

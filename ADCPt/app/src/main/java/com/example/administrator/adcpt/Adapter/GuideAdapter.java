@@ -1,4 +1,4 @@
-package com.example.administrator.adcpt.Adapter;
+package com.example.administrator.adcpt.adapter;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;

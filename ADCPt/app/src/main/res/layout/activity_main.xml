@@ -2,27 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/main_drawer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:title="default"
-                app:titleTextColor="@color/colorBlack"
-                android:background="@color/colorRed">
-
-            </android.support.v7.widget.Toolbar>
 
             <FrameLayout
                 android:id="@+id/main_content"
@@ -40,6 +32,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="bottom"
                 app:bnbActiveColor="@color/colorRed"
+
                 app:bnbAutoHideEnabled="true"
                 app:bnbBackgroundColor="@color/colorWhite"
                 app:bnbInactiveColor="@color/colorBlack" />
