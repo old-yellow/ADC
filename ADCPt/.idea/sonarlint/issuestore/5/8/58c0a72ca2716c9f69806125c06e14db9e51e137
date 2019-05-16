@@ -1,4 +1,4 @@
 
-fsquid:S00116"PRename this field "DELAY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã ©ž
-gsquid:S1450"SRemove the "task" field and declare it as a local variable in the relevant methods.(Ÿ¾¼u
-6squid:S1170"!Make this final field static too.(ã ©ž
+8squid:S1170"!Make this final field static too.(ã ©ž
+isquid:S1450"SRemove the "task" field and declare it as a local variable in the relevant methods.(Ÿ¾¼u
+hsquid:S00116"PRename this field "DELAY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã ©ž

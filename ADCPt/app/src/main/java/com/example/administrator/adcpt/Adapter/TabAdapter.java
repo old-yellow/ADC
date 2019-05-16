@@ -10,14 +10,14 @@ import java.util.List;
  * Created by Administrator on 2019/5/13.
  */
 
-public class HomeTabAdapter extends FragmentPagerAdapter{
+public class TabAdapter extends FragmentPagerAdapter{
 
     //fragment列表
     private List<Fragment> mFragmentList;
     //tab的标签
     private List<String> mTitleList;
 
-    public HomeTabAdapter(FragmentManager fm, List<Fragment> fragmentList, List<String> titleList) {
+    public TabAdapter(FragmentManager fm, List<Fragment> fragmentList, List<String> titleList) {
         super(fm);
         this.mFragmentList = fragmentList;
         this.mTitleList = titleList;

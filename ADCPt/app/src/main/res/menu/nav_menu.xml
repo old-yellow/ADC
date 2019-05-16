@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group>
-
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/bottom_icon1"
+            android:title="首页"/>
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/bottom_icon1"
+            android:title="历史记录"/>
+        <item
+            android:id="@+id/cache"
+            android:icon="@drawable/bottom_icon1"
+            android:title="首页"/>
+        <item
+            android:id="@+id/collection"
+            android:icon="@drawable/bottom_icon1"
+            android:title="我的收藏"/>
+        <item
+            android:id="@+id/marked"
+            android:icon="@drawable/bottom_icon1"
+            android:title="稍后再看"/>
+        <item
+            android:id="@+id/upload"
+            android:icon="@drawable/bottom_icon1"
+            android:title="投稿"/>
+        <item
+            android:id="@+id/make"
+            android:icon="@drawable/bottom_icon1"
+            android:title="创作中心"/>
+        <item
+            android:id="@+id/hot_activity"
+            android:icon="@drawable/bottom_icon1"
+            android:title="热门活动"/>
+        <item
+            android:id="@+id/show"
+            android:icon="@drawable/bottom_icon1"
+            android:title="直播中心"/>
+        <item
+            android:id="@+id/free_traffic"
+            android:icon="@drawable/bottom_icon1"
+            android:title="免流量服务"/>
+        <item
+            android:id="@+id/record"
+            android:icon="@drawable/bottom_icon1"
+            android:title="我的订单"/>
+        <item
+            android:id="@+id/vip_mall"
+            android:icon="@drawable/bottom_icon1"
+            android:title="会员购中心"/>
+        <item
+            android:id="@+id/serve"
+            android:icon="@drawable/bottom_icon1"
+            android:title="联系客服"/>
     </group>
 </menu>

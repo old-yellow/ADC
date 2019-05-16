@@ -1,0 +1,12 @@
+
+Nsquid:S1068"+Remove this unused "likeNum" private field.(Ç†‘üıÿÿÿÿ8íæ°ò«-
+Ksquid:S1068"(Remove this unused "date" private field.(°‡è›üÿÿÿÿ8ÑÖ¤ò«-
+Lsquid:S1068".Remove this unused "reprintNum" private field.(×À¢Í8’Ú¯ò«-
+Hsquid:S1068
+"*Remove this unused "upName" private field.(À–¨®8š›ò«-
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¦Šïß
+Gsquid:S1068")Remove this unused "label" private field.(¯©·8’Ú¯ò«-
+Lsquid:S1068".Remove this unused "commentNum" private field.(“ºäÄ8ŠÃ°ò«-
+Nsquid:S1068"+Remove this unused "coverId" private field.(„†»†øÿÿÿÿ8’Ú¯ò«-
+Lsquid:S1068")Remove this unused "title" private field.(åõò¹ıÿÿÿÿ8’Ú¯ò«-
+Jsquid:S1068",Remove this unused "avatarId" private field.(ñÿ†8â‚Æò«-

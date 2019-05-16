@@ -5,4 +5,106 @@
     android:padding="10dp"
     android:background="@color/colorPink">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_img"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/nav_icon"/>
+
+    <ImageButton
+        android:id="@+id/scan"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_settings"/>
+
+    <ImageButton
+        android:id="@+id/purse"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/scan"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_menu" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_img"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:text="老黄瓜片儿"
+        />
+
+    <TextView
+        android:id="@+id/user_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        android:background="@drawable/text_view_edge"
+        android:layout_toRightOf="@+id/user_name"
+        android:layout_alignBottom="@id/user_name"
+        android:text="Lv.3"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/vip_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPink"
+        android:textSize="12sp"
+        android:background="@drawable/text_view_edge2"
+        android:layout_toRightOf="@+id/user_level"
+        android:layout_alignBottom="@id/user_level"
+        android:text="正式会员"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/b_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="10dp"
+        android:text="B币: "
+        android:textColor="@color/colorWhite2"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/b_coin_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/b_coin"
+        android:layout_marginLeft="5dp"
+        android:text="0.0"
+        android:textColor="@color/colorWhite2"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/b_coin_number"
+        android:layout_marginLeft="10dp"
+        android:text="硬币: "
+        android:textColor="@color/colorWhite2"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/coin_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/coin"
+        android:layout_marginLeft="5dp"
+        android:text="211.0"
+        android:textColor="@color/colorWhite2"
+        android:textSize="15sp"/>
 </RelativeLayout>

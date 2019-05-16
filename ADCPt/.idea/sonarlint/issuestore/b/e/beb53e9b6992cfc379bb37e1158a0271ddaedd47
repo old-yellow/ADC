@@ -1,3 +1,5 @@
 
-\squid:UselessImportCheck"1Remove this unused import 'android.app.Activity'.(á Õ∆8Â»ÂÇ´-
-qsquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(Â¥ ´ˇˇˇˇˇ8Â»ÂÇ´-
+`squid:UselessImportCheck	"0Remove this unused import 'android.view.Window'.(øËô˜˙ˇˇˇˇ8—Ó†´-
+|squid:UselessImportCheck"LRemove this unused import 'com.example.administrator.adcpt.ui.MainActivity'.(«‡ù¥˝ˇˇˇˇ8˝Ω¿®´-
+\squid:UselessImportCheck"1Remove this unused import 'android.app.Activity'.(á Õ∆8•≥õ†´-
+qsquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(Â¥ ´ˇˇˇˇˇ8Â»ÂÇ´-

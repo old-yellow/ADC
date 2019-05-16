@@ -1,0 +1,6 @@
+
+Fsquid:S1148="#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Õë›ö«-
+bsquid:S2147<"DCombine this catch with the one at line 58, which has the same body.(Å¡ß8Õë›ö«-
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(ÎÄ‹‘8‡¹ö«-
+Fsquid:S1148;"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Õë›ö«-
+Ksquid:S1604"(Make this anonymous inner class a lambda(Á¾Æüûÿÿÿÿ8Õë›ö«-

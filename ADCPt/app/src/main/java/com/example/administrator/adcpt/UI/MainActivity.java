@@ -4,17 +4,18 @@ import android.app.Activity;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -22,11 +23,16 @@ import android.widget.TextView;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
+import com.example.administrator.adcpt.adapter.NavItemAdapter;
 import com.example.administrator.adcpt.base.ActivityCollector;
 import com.example.administrator.adcpt.base.BaseActivity;
 import com.example.administrator.adcpt.R;
+import com.example.administrator.adcpt.entity.NavItem;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainActivity extends BaseActivity {
 
@@ -35,25 +41,38 @@ public class MainActivity extends BaseActivity {
 
     private Fragment homeFragment;
 
-    private Fragment zergFragment;
+    private Fragment channelFragment;
 
-    private Fragment terranFragment;
+    private Fragment newsFragment;
 
-    private Fragment protossFragment;
+    private Fragment vipMallFragment;
 
+    //导航栏选项
+    private List<NavItem> navItemList = new ArrayList<>();
+
+    //侧边栏按钮
+    private Button newsButton;
+    private Button interestButton;
+    private Button fansButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        NavigationView navView = (NavigationView) findViewById(R.id.nav_view);
+        LinearLayout navView = (LinearLayout) findViewById(R.id.nav_view);
         //设置抽屉适配屏幕占比
         setDrawerScale(this, navView, 0.75);
         //设置底部导航栏
         init();
+        newsButton = (Button)findViewById(R.id.news);
+        interestButton = (Button)findViewById(R.id.interest);
+
     }
 
     private void init() {
+
+        //初始化侧拉导航栏数据
+        initNavItems();
 
         //底部导航栏
         BottomNavigationBar mNavigationBar = (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar);
@@ -65,11 +84,11 @@ public class MainActivity extends BaseActivity {
         mNavigationBar
                 .addItem(new BottomNavigationItem(R.drawable.bottom_icon4_1, "主页")
                         .setInactiveIconResource(R.drawable.bottom_icon4))
-                .addItem(new BottomNavigationItem(R.drawable.bottom_icon1_1, "泰伦")
+                .addItem(new BottomNavigationItem(R.drawable.bottom_icon1_1, "频道")
                         .setInactiveIconResource(R.drawable.bottom_icon1))
-                .addItem(new BottomNavigationItem(R.drawable.bottom_icon2_1, "异虫")
+                .addItem(new BottomNavigationItem(R.drawable.bottom_icon2_1, "动态")
                         .setInactiveIconResource(R.drawable.bottom_icon2))
-                .addItem(new BottomNavigationItem(R.drawable.bottom_icon3_1, "星灵")
+                .addItem(new BottomNavigationItem(R.drawable.bottom_icon3_1, "会员购")
                         .setInactiveIconResource(R.drawable.bottom_icon3))
                 .setFirstSelectedPosition(0)
                 .initialise();
@@ -94,6 +113,47 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+    }
+
+    //初始化导航栏数据
+    private void initNavItems() {
+
+        //加载具体导航每一栏的数据
+        initNavItemList();
+        RecyclerView navItems = (RecyclerView)findViewById(R.id.nav_items);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        navItems.setLayoutManager(layoutManager);
+        NavItemAdapter adapter = new NavItemAdapter(navItemList);
+        navItems.setAdapter(adapter);
+    }
+
+    private void initNavItemList() {
+        NavItem home = new NavItem("首页", R.drawable.bottom_icon1);
+        navItemList.add(home);
+        NavItem history = new NavItem("历史记录", R.drawable.bottom_icon1);
+        navItemList.add(history);
+        NavItem cache = new NavItem("离线缓存", R.drawable.bottom_icon1);
+        navItemList.add(cache);
+        NavItem collection = new NavItem("我的收藏", R.drawable.bottom_icon1);
+        navItemList.add(collection);
+        NavItem marked = new NavItem("稍后再看", R.drawable.bottom_icon1);
+        navItemList.add(marked);
+        NavItem upload = new NavItem("投稿", R.drawable.bottom_icon1);
+        navItemList.add(upload);
+        NavItem make = new NavItem("创作中心", R.drawable.bottom_icon1);
+        navItemList.add(make);
+        NavItem hotActivity = new NavItem("热门活动", R.drawable.bottom_icon1);
+        navItemList.add(hotActivity);
+        NavItem show = new NavItem("直播中心", R.drawable.bottom_icon1);
+        navItemList.add(show);
+        NavItem free = new NavItem("免流量服务", R.drawable.bottom_icon1);
+        navItemList.add(free);
+        NavItem record = new NavItem("我的订单", R.drawable.bottom_icon1);
+        navItemList.add(record);
+        NavItem vipMall = new NavItem("会员购中心", R.drawable.bottom_icon1);
+        navItemList.add(vipMall);
+        NavItem serve = new NavItem("联系客服", R.drawable.bottom_icon1);
+        navItemList.add(serve);
     }
 
     private void setBottomNavigationItem(BottomNavigationBar bottomNavigationBar, int space, int imgLen, int textSize){
@@ -158,27 +218,27 @@ public class MainActivity extends BaseActivity {
                 }
                 break;
             case 1:
-                if (zergFragment == null) {
-                    zergFragment = new ZergFragment();
-                    fragmentTransaction.add(R.id.main_content, zergFragment);
+                if (channelFragment == null) {
+                    channelFragment = new ChannelFragment();
+                    fragmentTransaction.add(R.id.main_content, channelFragment);
                 } else {
-                    fragmentTransaction.show(zergFragment);
+                    fragmentTransaction.show(channelFragment);
                 }
                 break;
             case 2:
-                if (terranFragment == null) {
-                    terranFragment = new TerranFragment();
-                    fragmentTransaction.add(R.id.main_content, terranFragment);
+                if (newsFragment == null) {
+                    newsFragment = new NewsFragment();
+                    fragmentTransaction.add(R.id.main_content, newsFragment);
                 } else {
-                    fragmentTransaction.show(terranFragment);
+                    fragmentTransaction.show(newsFragment);
                 }
                 break;
             case 3:
-                if (protossFragment == null) {
-                    protossFragment = new ProtossFragment();
-                    fragmentTransaction.add(R.id.main_content, protossFragment);
+                if (vipMallFragment == null) {
+                    vipMallFragment = new VipMallFragment();
+                    fragmentTransaction.add(R.id.main_content, vipMallFragment);
                 } else {
-                    fragmentTransaction.show(protossFragment);
+                    fragmentTransaction.show(vipMallFragment);
                 }
                 break;
             default:
@@ -189,7 +249,7 @@ public class MainActivity extends BaseActivity {
     //隐藏未点开页面
     private void hideFragment(FragmentTransaction transaction) {
         Fragment[] fragments = new Fragment[]{
-                homeFragment, zergFragment, terranFragment, protossFragment};
+                homeFragment, channelFragment, newsFragment, vipMallFragment};
         for (Fragment fragment : fragments) {
             if (fragment != null) {
                 transaction.hide(fragment);

@@ -1,0 +1,7 @@
+
+Isquid:S1172D"+Remove this unused method parameter "view".(‚Ç¥Ğ8–¢åô«-
+hsquid:UselessImportCheck	"8Remove this unused import 'android.widget.LinearLayout'.(çîšçúÿÿÿÿ8€¬Îô«-
+Nsquid:S1172@"+Remove this unused method parameter "view".(…¹Öõüÿÿÿÿ8–¢åô«-
+¤squid:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…¹Öõüÿÿÿÿ8–¢åô«-
+Ÿsquid:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚Ç¥Ğ8–¢åô«-
+Isquid:S1172I"+Remove this unused method parameter "view".(‰óÊ¾8–¢åô«-

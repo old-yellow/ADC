@@ -7,4 +7,9 @@
     <color name="colorBlack">#0a0a0a</color>
     <color name="colorRed">#e11010</color>
     <color name="colorPink">#f40e85</color>
+    <color name="colorWhite2">#e9e1e1</color>
+    <color name="colorWhite3">#f7f3f3</color>
+    <color name="colorBlack2">#594949</color>
+    <color name="colorBlue">#5e6eb7</color>
+    <color name="colorBlack3">#867d7d</color>
 </resources>
