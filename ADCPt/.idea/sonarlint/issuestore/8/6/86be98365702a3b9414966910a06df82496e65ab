@@ -1,7 +1,10 @@
 
-Isquid:S1172D"+Remove this unused method parameter "view".(‚Ç¥Ğ8–¢åô«-
-hsquid:UselessImportCheck	"8Remove this unused import 'android.widget.LinearLayout'.(çîšçúÿÿÿÿ8€¬Îô«-
-Nsquid:S1172@"+Remove this unused method parameter "view".(…¹Öõüÿÿÿÿ8–¢åô«-
-¤squid:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…¹Öõüÿÿÿÿ8–¢åô«-
-Ÿsquid:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚Ç¥Ğ8–¢åô«-
-Isquid:S1172I"+Remove this unused method parameter "view".(‰óÊ¾8–¢åô«-
+hsquid:UselessImportCheck"8Remove this unused import 'android.widget.LinearLayout'.(çîšçúÿÿÿÿ8€¬Îô«-
+{squid:S1845+"]Rename field "tag" to prevent any misunderstanding/clash with field "TAG" defined on line 35.(™¶©ä8²áòò­-
+zsquid:UselessImportCheck"JRemove this unused import 'android.support.v7.widget.LinearLayoutManager'.(í™½Úúÿÿÿÿ8œîâè­-
+{squid:UselessImportCheck"QRemove this unused import 'com.example.administrator.adcpt.entity.NewsVideoItem'.(ˆ¸Œr8çƒÙæ­-
+isquid:CommentedOutCodeLine|"<This block of commented-out lines of code should be removed.(€ı®8ŸÄêé­-
+nsquid:CommentedOutCodeLinew"<This block of commented-out lines of code should be removed.(ªÛ¸ßûÿÿÿÿ8ŸÄêé­-
+isquid:CommentedOutCodeLineu"<This block of commented-out lines of code should be removed.(Î›¿ó8ŸÄêé­-
+Fsquid:S11857"(Remove this method to simply inherit it.(Ö‰ü¼8ˆ¨ì­-
+Isquid:S1172k"+Remove this unused method parameter "view".(ûÛÎ8ŸÄêé­-

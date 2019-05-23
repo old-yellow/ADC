@@ -1,0 +1,11 @@
+
+Fsquid:S1604h"(Make this anonymous inner class a lambda(ÉãÃ®8—Û›®-
+Ksquid:S1604?"(Make this anonymous inner class a lambda(ˆŞˆúÿÿÿÿ8¦‹®-
+Ksquid:S1604n"(Make this anonymous inner class a lambda(íÙÁ›úÿÿÿÿ8—Û›®-
+lsquid:MaximumInheritanceDepth"<This class has 9 parents which is greater than 5 authorized.(üùô½8šÏÿ•®-
+isquid:S13019"KReplace this "switch" statement by "if" statements to increase readability.(ºÖ8ïûÉ›®-
+osquid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(Ã•Éåøÿÿÿÿ8—Û›®-
+Ksquid:S1604G"(Make this anonymous inner class a lambda(ÚÒà¡ûÿÿÿÿ8¦‹®-
+bsquid:UselessImportCheck"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8©ëÏ›®-
+W"squid:SwitchLastCaseIsDefaultCheck9""Add a default case to this switch.(ºÖ8ïûÉ›®-
+ssquid:S001165"ORename this field "PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÅ“ûÿÿÿÿ8·ÅÛš®-

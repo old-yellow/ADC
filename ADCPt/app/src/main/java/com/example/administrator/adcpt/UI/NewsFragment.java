@@ -58,6 +58,7 @@ public class NewsFragment extends Fragment {
         TabAdapter adapter = new TabAdapter(getChildFragmentManager(), fragments, titles);
         newsTab.setupWithViewPager(newsPager);
         newsPager.setAdapter(adapter);
+        newsPager.setOffscreenPageLimit(2);
         //设置下划线适应文本
         TabUtils.reflex(newsTab, getActivity(), 30);
     }

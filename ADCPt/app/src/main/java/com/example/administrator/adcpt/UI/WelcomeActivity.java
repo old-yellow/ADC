@@ -28,11 +28,11 @@ public class WelcomeActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_welcome);
-        ImageView startImg = (ImageView)findViewById(R.id.start_img);
-        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
-        startImg.setLayoutParams(params);
-        startImg.setBackgroundResource(R.mipmap.ic_splash_default);
+//        ImageView startImg = (ImageView)findViewById(R.id.start_img);
+//        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(
+//                RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT * 3 / 5);
+//        startImg.setLayoutParams(params);
+//        startImg.setBackgroundResource(R.mipmap.ic_splash_default);
         RelativeLayout welcomeLayout = (RelativeLayout)findViewById(R.id.welcome_layout);
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.alpha);
         welcomeLayout.startAnimation(animation);

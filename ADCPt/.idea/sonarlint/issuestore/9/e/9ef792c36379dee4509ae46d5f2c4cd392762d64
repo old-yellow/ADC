@@ -1,5 +1,5 @@
 
-hsquid:UselessImportCheck"8Remove this unused import 'android.widget.LinearLayout'.(çîšçúÿÿÿÿ8âö×ü«-
 _squid:UselessImportCheck"4Remove this unused import 'java.lang.reflect.Field'.(„‡Áú8âö×ü«-
-dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8âö×ü«-
+hsquid:UselessImportCheck"8Remove this unused import 'android.widget.LinearLayout'.(çîšçúÿÿÿÿ8âö×ü«-
 \squid:UselessImportCheck"1Remove this unused import 'android.app.Activity'.(‡ÊÍÆ8âö×ü«-
+dsquid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ8âö×ü«-

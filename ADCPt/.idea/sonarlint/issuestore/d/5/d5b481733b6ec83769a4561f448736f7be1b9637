@@ -1,12 +1,14 @@
 
-|squid:S14506"YRemove the "newsButton" field and declare it as a local variable in the relevant methods.(ŒÖ‹ùÿÿÿÿ8àÜÛğ«-
-{squid:S14507"]Remove the "interestButton" field and declare it as a local variable in the relevant methods.(€ÎÖá8¤ÖŞğ«-
-¤squid:S1186l"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(âÈºùÿÿÿÿ8¾¯Ñğ«-
-Qsquid:S10688".Remove this unused "fansButton" private field.(‡³ËÈşÿÿÿÿ8›Æñğ«-
 lsquid:MaximumInheritanceDepth%"<This class has 9 parents which is greater than 5 authorized.(‘Ù±8Íñáú«-
 Gsquid:S1148˜"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾¯Ñğ«-
-hsquid:S2184·"DCast one of the operands of this subtraction operation to a "float".(¯Šº“üÿÿÿÿ8¾¯Ñğ«-
-Gsquid:S1148Â"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾¯Ñğ«-
 Qsquid:S10686".Remove this unused "newsButton" private field.(ŒÖ‹ùÿÿÿÿ8›Æñğ«-
+¤squid:S1186l"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(âÈºùÿÿÿÿ8¾¯Ñğ«-
+Gsquid:S1148Â"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾¯Ñğ«-
+isquid:CommentedOutCodeLinez"<This block of commented-out lines of code should be removed.(îĞæÃ8É÷»–­-
+|squid:S14506"YRemove the "newsButton" field and declare it as a local variable in the relevant methods.(ŒÖ‹ùÿÿÿÿ8àÜÛğ«-
 Psquid:S10687"2Remove this unused "interestButton" private field.(€ÎÖá8›Æñğ«-
+{squid:S14507"]Remove the "interestButton" field and declare it as a local variable in the relevant methods.(€ÎÖá8¤ÖŞğ«-
+asquid:UnusedPrivateMethod‚"4Remove this unused private "initNavItemList" method.(öÈ÷ó8Ãİâ™­-
 Ÿsquid:S1186p"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(êÇÄµ8¾¯Ñğ«-
+hsquid:S2184·"DCast one of the operands of this subtraction operation to a "float".(¯Šº“üÿÿÿÿ8¾¯Ñğ«-
+Qsquid:S10688".Remove this unused "fansButton" private field.(‡³ËÈşÿÿÿÿ8›Æñğ«-

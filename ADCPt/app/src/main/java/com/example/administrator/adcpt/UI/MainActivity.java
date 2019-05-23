@@ -119,12 +119,12 @@ public class MainActivity extends BaseActivity {
     private void initNavItems() {
 
         //加载具体导航每一栏的数据
-        initNavItemList();
-        RecyclerView navItems = (RecyclerView)findViewById(R.id.nav_items);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        navItems.setLayoutManager(layoutManager);
-        NavItemAdapter adapter = new NavItemAdapter(navItemList);
-        navItems.setAdapter(adapter);
+//        initNavItemList();
+//        RecyclerView navItems = (RecyclerView)findViewById(R.id.nav_items);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+//        navItems.setLayoutManager(layoutManager);
+//        NavItemAdapter adapter = new NavItemAdapter(navItemList);
+//        navItems.setAdapter(adapter);
     }
 
     private void initNavItemList() {

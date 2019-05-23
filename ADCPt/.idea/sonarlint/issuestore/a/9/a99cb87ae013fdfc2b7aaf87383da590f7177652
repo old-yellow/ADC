@@ -1,0 +1,7 @@
+
+U"squid:SwitchLastCaseIsDefaultChecki""Add a default case to this switch.(ıŞ³‹ùÿÿÿÿ
+\squid:S3398‡"?Move this method into the anonymous class declared at line 101.(„çŸäúÿÿÿÿ
+@squid:S1659W"*Declare "mCurrentTime" on a separate line.(Àš¾6
+Ysquid:S3878Î"ADisambiguate this call by either casting as "Class" or "Class[]".(Ç§Îø
+gsquid:S1301i"KReplace this "switch" statement by "if" statements to increase readability.(ıŞ³‹ùÿÿÿÿ
+rsquid:S00115M"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(úûÚÂ
