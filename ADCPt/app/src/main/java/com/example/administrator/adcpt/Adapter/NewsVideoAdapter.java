@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,7 +33,7 @@ import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class NewsVideoAdapter extends XRecyclerView.Adapter<NewsVideoAdapter.ViewHolder> {
 
-//    List<NewsVideoItem> mNewsVideoItemList;
+    //    List<NewsVideoItem> mNewsVideoItemList;
 //
 //    public NewsVideoAdapter(List<NewsVideoItem> newsVideoItemList) {
 //        mNewsVideoItemList = newsVideoItemList;
@@ -110,6 +111,7 @@ public class NewsVideoAdapter extends XRecyclerView.Adapter<NewsVideoAdapter.Vie
 //    public int getItemCount() {
 //        return mNewsVideoItemList.size();
 //    }
+    private static final String TAG = "NewsVideoAdapter";
 
     //上下文
     public Context mContext;
@@ -132,7 +134,7 @@ public class NewsVideoAdapter extends XRecyclerView.Adapter<NewsVideoAdapter.Vie
         public ViewHolder(View view) {
             super(view);
             ButterKnife.bind(this, view);
-            cardView = (CardView)view;
+            cardView = (CardView) view;
         }
     }
 
@@ -147,6 +149,7 @@ public class NewsVideoAdapter extends XRecyclerView.Adapter<NewsVideoAdapter.Vie
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG, "VideoStart");
                 int position = holder.getAdapterPosition();
                 VideoCard videoCard = mVideoCardList.get(position);
                 Intent intent = new Intent(mContext, VideoActivity.class);

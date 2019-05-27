@@ -10,7 +10,6 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -55,7 +54,7 @@ public class VideoActivity extends BaseActivity {
     @OnClick(R.id.video_start)
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.video_start :
+            case R.id.video_start:
                 mVideoStart.setVisibility(View.GONE);
                 mThumbnail.setVisibility(View.GONE);
                 mVideoView.setVideoPath(PATH);
@@ -76,13 +75,15 @@ public class VideoActivity extends BaseActivity {
                         mVideoStart.setVisibility(View.VISIBLE);
                     }
                 });
+                break;
+            default:
         }
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (io.vov.vitamio.LibsChecker.checkVitamioLibs(this)) {
+        if (!io.vov.vitamio.LibsChecker.checkVitamioLibs(this)) {
             return;
         }
         setContentView(R.layout.activity_video);
@@ -95,12 +96,12 @@ public class VideoActivity extends BaseActivity {
     private void init() {
         Intent intent = getIntent();
         PATH = intent.getStringExtra(VIDEO_URL);
-        mController = new MediaController(this);
-        mController.setVisibility(View.GONE);
+        mController = new MediaController(this, true, mVideoGroup);
         setData();
     }
 
     private void setData() {
+        Log.d(TAG, "setData");
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -113,15 +114,17 @@ public class VideoActivity extends BaseActivity {
                             mThumbnail.setImageBitmap(videoThumbnail);
                         }
                     });
+                } else {
+                    Log.d(TAG, "setThumbnailFailed");
                 }
             }
         }).start();
     }
 
     //横屏全屏播放
-
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
+        Log.d(TAG, "fullScreen");
         super.onConfigurationChanged(newConfig);
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             isFullScreen = true;
@@ -140,7 +143,9 @@ public class VideoActivity extends BaseActivity {
                     LinearLayout.LayoutParams.MATCH_PARENT, TabUtils.dip2px(220, this));
             mVideoGroup.setLayoutParams(params);
         }
+
     }
+
 
     //返回键切换小屏
 
@@ -148,7 +153,6 @@ public class VideoActivity extends BaseActivity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && isFullScreen) {
             this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-//            mController.setFullScreenIconState(false);
             return true;
         }
         return super.onKeyDown(keyCode, event);

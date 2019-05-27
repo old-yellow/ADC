@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
 
     <application
         android:allowBackup="true"
@@ -29,15 +30,18 @@
         </activity>
         <activity android:name=".ui.GuideActivity" />
         <activity android:name=".ui.MainActivity" />
+
+
+        <activity
+            android:name=".ui.VideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize" />
         <activity
             android:name="io.vov.vitamio.activity.InitActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".ui.VideoActivity"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"></activity>
+
     </application>
 
 </manifest>

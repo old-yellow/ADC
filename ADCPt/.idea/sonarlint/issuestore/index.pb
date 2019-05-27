@@ -87,3 +87,5 @@ f
 6vitamio/src/io/vov/vitamio/widget/MediaController.java,a\9\a99cb87ae013fdfc2b7aaf87383da590f7177652
 w
 Gapp/src/main/java/com/example/administrator/adcpt/ui/VideoActivity.java,0\7\07babe841de59cf339c6bfe5d3990021f110cbb4
+c
+3vitamio/src/io/vov/vitamio/provider/MediaStore.java,4\d\4d403351a83e2107090c88c398c58807de20d111

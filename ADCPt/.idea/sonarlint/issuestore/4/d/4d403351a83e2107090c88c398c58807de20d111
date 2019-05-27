@@ -1,0 +1,18 @@
+
+msquid:S1192ˆ"PDefine a constant instead of duplicating this literal "CREATE TRIGGER " 3 times.(Ş¬²¾ÿÿÿÿÿ
+lsquid:S1192*"PDefine a constant instead of duplicating this literal " TEXT NOT NULL," 3 times.(ªš½ôüÿÿÿÿ
+bsquid:S1192-"KDefine a constant instead of duplicating this literal " INTEGER," 12 times.(é•«¦
+dsquid:S1192."HDefine a constant instead of duplicating this literal " TEXT," 10 times.(ˆ«ñÓúÿÿÿÿ
+dsquid:S1192Š"GDefine a constant instead of duplicating this literal "BEGIN " 3 times.(¥Øüªùÿÿÿÿ
+lsquid:S1192Ö"UDefine a constant instead of duplicating this literal "getMiniThumbFromFile" 3 times.(”È½
+>squid:S1214?""Move constants to a class or enum.(¥ı·¨úÿÿÿÿ
+>squid:S1214P""Move constants to a class or enum.(ÎšÿÛøÿÿÿÿ
+>squid:S1214b""Move constants to a class or enum.(Èòâìûÿÿÿÿ
+jsquid:S3776ú"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(ÓòŠç
+Qsquid:S1118Z":Add a private constructor to hide the implicit public one.(¸Àû…
+Vsquid:S1118t":Add a private constructor to hide the implicit public one.(¨ÿİÈıÿÿÿÿ
+Wsquid:S1118–":Add a private constructor to hide the implicit public one.(ú›üùÿÿÿÿ
+Bsquid:S1172ê"*Remove this unused method parameter "ctx".(´Ÿ·õ
+Bsquid:S1172ú"*Remove this unused method parameter "ctx".(ÓòŠç
+]squid:S2147×"ECombine this catch with the one at line 213, which has the same body.(Ãôş•
+bsquid:S2147Ù"ECombine this catch with the one at line 213, which has the same body.(ìÏÒ×øÿÿÿÿ

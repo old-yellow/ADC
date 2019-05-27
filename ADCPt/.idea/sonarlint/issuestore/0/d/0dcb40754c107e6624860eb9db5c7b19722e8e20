@@ -1,26 +1,26 @@
 
-Š"squid:ClassVariableVisibilityCheck‚"TMake cardView a static final constant or non-public and provide accessors if needed.(ÙÉ›ù8ÚÿÍœ®-
-nsquid:CommentedOutCodeLineU"<This block of commented-out lines of code should be removed.(¿´å™ûÿÿÿÿ8âƒÙæ­-
-0squid:S2176{"Rename this class.(©‹¸‡8Æ…ðõ­-
-nsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(ú¬Öæüÿÿÿÿ8âƒÙæ­-
-nsquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(ö†ß†ùÿÿÿÿ8âƒÙæ­-
-nsquid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(©ÞÍ·ÿÿÿÿÿ8âƒÙæ­-
-nsquid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(Ñ «†ûÿÿÿÿ8âƒÙæ­-
-isquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(êàí™8âƒÙæ­-
-”"squid:ClassVariableVisibilityChecku"ZMake mVideoCardList a static final constant or non-public and provide accessors if needed.(„¿Š­þÿÿÿÿ8¡ëþõ­-
-isquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(„û°ñ8âƒÙæ­-
-nsquid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(×‡çüÿÿÿÿ8âƒÙæ­-
-nsquid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(ºð“Êÿÿÿÿÿ8âƒÙæ­-
-nsquid:CommentedOutCodeLine]"<This block of commented-out lines of code should be removed.(òêß¡þÿÿÿÿ8âƒÙæ­-
-nsquid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(úáööøÿÿÿÿ8âƒÙæ­-
-hsquid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(õú¤s8âƒÙæ­-
-isquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(ƒåŸÙ8âƒÙæ­-
-nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(†É›œüÿÿÿÿ8âƒÙæ­-
-nsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(‚Ü›Æþÿÿÿÿ8âƒÙæ­-
-isquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(™‡ëÞ8âƒÙæ­-
-isquid:CommentedOutCodeLineW"<This block of commented-out lines of code should be removed.(›ã…°8âƒÙæ­-
-ˆ"squid:ClassVariableVisibilityChecks"TMake mContext a static final constant or non-public and provide accessors if needed.(Ù’þ8âƒÙæ­-
-‡squid:UselessImportCheck"WRemove this unused import 'jp.wasabeef.glide.transformations.CropCircleTransformation'.(áæ¼ïþÿÿÿÿ8ÔÈîï­-
-nsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(²Û÷Îüÿÿÿÿ8âƒÙæ­-
-nsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(Þ¼—Ïýÿÿÿÿ8âƒÙæ­-
-isquid:CommentedOutCodeLinen"<This block of commented-out lines of code should be removed.(Ýöò¶8âƒÙæ­-
+isquid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(„û°ñ8âƒÙæ­-
+isquid:CommentedOutCodeLineX"<This block of commented-out lines of code should be removed.(›ã…°8âƒÙæ­-
+nsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(×‡çüÿÿÿÿ8âƒÙæ­-
+”"squid:ClassVariableVisibilityCheckw"ZMake mVideoCardList a static final constant or non-public and provide accessors if needed.(„¿Š­þÿÿÿÿ8¡ëþõ­-
+0squid:S2176}"Rename this class.(©‹¸‡8éÿÙº®-
+nsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(²Û÷Îüÿÿÿÿ8âƒÙæ­-
+‡squid:UselessImportCheck"WRemove this unused import 'jp.wasabeef.glide.transformations.CropCircleTransformation'.(áæ¼ïþÿÿÿÿ8ÔÈîï­-
+nsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(úáööøÿÿÿÿ8âƒÙæ­-
+isquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(™‡ëÞ8âƒÙæ­-
+ˆ"squid:ClassVariableVisibilityChecku"TMake mContext a static final constant or non-public and provide accessors if needed.(Ù’þ8âƒÙæ­-
+nsquid:CommentedOutCodeLineV"<This block of commented-out lines of code should be removed.(¿´å™ûÿÿÿÿ8âƒÙæ­-
+nsquid:CommentedOutCodeLine$"<This block of commented-out lines of code should be removed.(†É›œüÿÿÿÿ8âƒÙæ­-
+isquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(ƒåŸÙ8âƒÙæ­-
+nsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(‚Ü›Æþÿÿÿÿ8âƒÙæ­-
+hsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(õú¤s8âƒÙæ­-
+nsquid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(ºð“Êÿÿÿÿÿ8âƒÙæ­-
+isquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(êàí™8âƒÙæ­-
+nsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(ú¬Öæüÿÿÿÿ8âƒÙæ­-
+nsquid:CommentedOutCodeLine8"<This block of commented-out lines of code should be removed.(©ÞÍ·ÿÿÿÿÿ8âƒÙæ­-
+isquid:CommentedOutCodeLineo"<This block of commented-out lines of code should be removed.(Ýöò¶8âƒÙæ­-
+nsquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(ö†ß†ùÿÿÿÿ8âƒÙæ­-
+nsquid:CommentedOutCodeLine^"<This block of commented-out lines of code should be removed.(òêß¡þÿÿÿÿ8âƒÙæ­-
+nsquid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(Þ¼—Ïýÿÿÿÿ8âƒÙæ­-
+Š"squid:ClassVariableVisibilityCheck„"TMake cardView a static final constant or non-public and provide accessors if needed.(ÙÉ›ù8éÿÙº®-
+nsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(Ñ «†ûÿÿÿÿ8âƒÙæ­-

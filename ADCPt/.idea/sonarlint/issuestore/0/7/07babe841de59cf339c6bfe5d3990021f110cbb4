@@ -1,11 +1,17 @@
 
-Fsquid:S1604h"(Make this anonymous inner class a lambda(ÉãÃ®8—Û›®-
-Ksquid:S1604?"(Make this anonymous inner class a lambda(ˆŞˆúÿÿÿÿ8¦‹®-
-Ksquid:S1604n"(Make this anonymous inner class a lambda(íÙÁ›úÿÿÿÿ8—Û›®-
-lsquid:MaximumInheritanceDepth"<This class has 9 parents which is greater than 5 authorized.(üùô½8šÏÿ•®-
-isquid:S13019"KReplace this "switch" statement by "if" statements to increase readability.(ºÖ8ïûÉ›®-
-osquid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(Ã•Éåøÿÿÿÿ8—Û›®-
-Ksquid:S1604G"(Make this anonymous inner class a lambda(ÚÒà¡ûÿÿÿÿ8¦‹®-
-bsquid:UselessImportCheck"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8©ëÏ›®-
-W"squid:SwitchLastCaseIsDefaultCheck9""Add a default case to this switch.(ºÖ8ïûÉ›®-
-ssquid:S001165"ORename this field "PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÅ“ûÿÿÿÿ8·ÅÛš®-
+W"squid:SwitchLastCaseIsDefaultCheck:""Add a default case to this switch.(ºÖ8ïûÉ›®-
+Fsquid:S1604i"(Make this anonymous inner class a lambda(ÉãÃ®8—Û›®-
+nsquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(öé÷µÿÿÿÿÿ8¿õ¾®-
+osquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(ş×ß“ÿÿÿÿÿ8—°Æ®-
+ssquid:S001166"ORename this field "PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÅ“ûÿÿÿÿ8·ÅÛš®-
+Ksquid:S1604o"(Make this anonymous inner class a lambda(íÙÁ›úÿÿÿÿ8—Û›®-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ºáÀ-8—°Æ®-
+lsquid:MaximumInheritanceDepth"<This class has 9 parents which is greater than 5 authorized.(üùô½8šÏÿ•®-
+osquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(—ÂÓëşÿÿÿÿ8—°Æ®-
+osquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(Ï¯Şóøÿÿÿÿ8—°Æ®-
+osquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(Ã•Éåøÿÿÿÿ8—Û›®-
+isquid:S1301:"KReplace this "switch" statement by "if" statements to increase readability.(ºÖ8ïûÉ›®-
+Ksquid:S1604@"(Make this anonymous inner class a lambda(ˆŞˆúÿÿÿÿ8¦‹®-
+isquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(ØÁ‰×8ï¨¤½®-
+jsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ì¹¸Ÿ8—°Æ®-
+Ksquid:S1604H"(Make this anonymous inner class a lambda(ÚÒà¡ûÿÿÿÿ8¦‹®-

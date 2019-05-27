@@ -178,6 +178,26 @@ public class MediaController extends FrameLayout {
       initFloatingWindow();
   }
 
+  public MediaController(Context context, boolean fromXml, View container) {
+    super(context);
+    //此处初始化了AudioManager和Context
+    initController(context);
+    //此处的activity是为后面获取当前屏幕方向而准备。接受Context类型再强制转换为activity也行。
+    mContext = context;
+    //设置mFromXml为true
+    mFromXml = fromXml;
+    //初始化Controller布局文件
+    mRoot = makeControllerView();
+    if (container instanceof FrameLayout) {
+      FrameLayout.LayoutParams p = new FrameLayout.LayoutParams(LayoutParams.MATCH_PARENT,
+              LayoutParams.WRAP_CONTENT);
+      //在父View底部
+      p.gravity = Gravity.BOTTOM;
+      mRoot.setLayoutParams(p);
+      ((FrameLayout) container).addView(mRoot);
+    }
+  }
+
   private boolean initController(Context context) {
     mContext = context;
     mAM = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);

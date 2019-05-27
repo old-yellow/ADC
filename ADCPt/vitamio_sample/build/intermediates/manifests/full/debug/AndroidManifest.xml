@@ -17,8 +17,7 @@
         android:allowBackup="false"
         android:debuggable="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/vitamio_demo_name"
-        android:testOnly="true" >
+        android:label="@string/vitamio_demo_name" >
 
         <!-- Don't forgot InitActivity -->
         <activity
