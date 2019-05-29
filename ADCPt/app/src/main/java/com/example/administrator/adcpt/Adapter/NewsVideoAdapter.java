@@ -20,6 +20,8 @@ import com.example.administrator.adcpt.entity.VideoItem;
 import com.example.administrator.adcpt.ui.VideoActivity;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
+import java.security.PublicKey;
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;

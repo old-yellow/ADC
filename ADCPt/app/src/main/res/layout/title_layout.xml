@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPink">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp"/>
+    
+    <ImageButton
+        android:id="@+id/title_open_nav"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="0dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_menu"/>
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/title_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/title_open_nav"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nav_icon"/>
+
+    <ImageButton
+        android:id="@+id/title_search_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_settings" />
+
+    <ImageButton
+        android:id="@+id/title_cache_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:src="@drawable/ic_menu" />
+
+    <ImageButton
+        android:id="@+id/title_write_news_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bottom_icon1" />
+
+    <ImageButton
+        android:id="@+id/title_notification_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bottom_icon2" />
+
+    <ImageButton
+        android:id="@+id/title_vip_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/bottom_icon3" />
+
+    <ImageButton
+        android:id="@+id/title_cart_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:src="@drawable/bottom_icon4" />
+</RelativeLayout>

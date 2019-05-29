@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -33,12 +34,42 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import de.hdodenhof.circleimageview.CircleImageView;
+
 
 public class MainActivity extends BaseActivity {
 
+    //标题栏各控件
+    @BindView(R.id.title_text)
+    TextView titleText;
+
+    @BindView(R.id.title_open_nav)
+    ImageButton openNavImg;
+
+    @BindView(R.id.title_avatar)
+    CircleImageView titleAvatarImg;
+
+    @BindView(R.id.title_notification_img)
+    ImageButton notificationImg;
+
+    @BindView(R.id.title_search_img)
+    ImageButton searchImg;
+
+    @BindView(R.id.title_cache_img)
+    ImageButton cacheImg;
+
+    @BindView(R.id.title_write_news_img)
+    ImageButton writeNewsImg;
+
+    @BindView(R.id.title_vip_img)
+    ImageButton vipImg;
+
+    @BindView(R.id.title_cart_img)
+    ImageButton cartImg;
+
     //包含的四个页面
-
-
     private Fragment homeFragment;
 
     private Fragment channelFragment;
@@ -59,13 +90,15 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //绑定ButterKnife
+        ButterKnife.bind(this);
         LinearLayout navView = (LinearLayout) findViewById(R.id.nav_view);
         //设置抽屉适配屏幕占比
         setDrawerScale(this, navView, 0.75);
         //设置底部导航栏
         init();
-        newsButton = (Button)findViewById(R.id.news);
-        interestButton = (Button)findViewById(R.id.interest);
+        newsButton = (Button) findViewById(R.id.news);
+        interestButton = (Button) findViewById(R.id.interest);
 
     }
 
@@ -92,7 +125,7 @@ public class MainActivity extends BaseActivity {
                         .setInactiveIconResource(R.drawable.bottom_icon3))
                 .setFirstSelectedPosition(0)
                 .initialise();
-        setBottomNavigationItem(mNavigationBar, 6,26, 10);
+        setBottomNavigationItem(mNavigationBar, 6, 26, 10);
         //默认出现的界面
         setDefaultView();
 
@@ -156,17 +189,17 @@ public class MainActivity extends BaseActivity {
         navItemList.add(serve);
     }
 
-    private void setBottomNavigationItem(BottomNavigationBar bottomNavigationBar, int space, int imgLen, int textSize){
+    private void setBottomNavigationItem(BottomNavigationBar bottomNavigationBar, int space, int imgLen, int textSize) {
         Class barClass = bottomNavigationBar.getClass();
         Field[] fields = barClass.getDeclaredFields();
-        for(int i = 0; i < fields.length; i++){
+        for (int i = 0; i < fields.length; i++) {
             Field field = fields[i];
             field.setAccessible(true);
-            if(field.getName().equals("mTabContainer")){
-                try{
+            if (field.getName().equals("mTabContainer")) {
+                try {
                     //反射得到 mTabContainer
                     LinearLayout mTabContainer = (LinearLayout) field.get(bottomNavigationBar);
-                    for(int j = 0; j < mTabContainer.getChildCount(); j++){
+                    for (int j = 0; j < mTabContainer.getChildCount(); j++) {
                         //获取到容器内的各个Tab
                         View view = mTabContainer.getChildAt(j);
                         //获取到Tab内的各个显示控件
@@ -180,17 +213,17 @@ public class MainActivity extends BaseActivity {
                         //计算文字的高度DP值并设置，setTextSize为设置文字正方形的对角线长度，所以：文字高度（总内容高度减去间距和图片高度）*根号2即为对角线长度，此处用DP值，设置该值即可。
                         labelView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, textSize);
                         labelView.setIncludeFontPadding(false);
-                        labelView.setPadding(0,0,0,dip2px(20-textSize - space/2));
+                        labelView.setPadding(0, 0, 0, dip2px(20 - textSize - space / 2));
 
                         //获取到Tab内的图像控件
                         ImageView iconView = (ImageView) view.findViewById(com.ashokvarma.bottomnavigation.R.id.fixed_bottom_navigation_icon);
                         //设置图片参数，其中，MethodUtils.dip2px()：换算dp值
                         params = new FrameLayout.LayoutParams(dip2px(imgLen), dip2px(imgLen));
-                        params.setMargins(0,0,0,space/2);
+                        params.setMargins(0, 0, 0, space / 2);
                         params.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
                         iconView.setLayoutParams(params);
                     }
-                } catch (IllegalAccessException e){
+                } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }
             }
@@ -204,6 +237,8 @@ public class MainActivity extends BaseActivity {
 
     //初始化相应界面，实现了fragment的懒加载
     private void initFragment(int position) {
+        //加载标题栏控件
+        initTitle(position);
         FragmentManager mFragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
         //先隐藏再加载
@@ -244,6 +279,50 @@ public class MainActivity extends BaseActivity {
             default:
         }
         fragmentTransaction.commit();
+    }
+
+    //加载每一页标题栏
+    private void initTitle(int position) {
+        switch (position) {
+            case 0:
+                titleText.setText("首页");
+                cacheImg.setVisibility(View.VISIBLE);
+                notificationImg.setVisibility(View.VISIBLE);
+                searchImg.setVisibility(View.GONE);
+                writeNewsImg.setVisibility(View.GONE);
+                vipImg.setVisibility(View.GONE);
+                cartImg.setVisibility(View.GONE);
+                break;
+            case 1:
+                titleText.setText("频道");
+                searchImg.setVisibility(View.VISIBLE);
+                cacheImg.setVisibility(View.VISIBLE);
+                notificationImg.setVisibility(View.GONE);
+                writeNewsImg.setVisibility(View.GONE);
+                vipImg.setVisibility(View.GONE);
+                cartImg.setVisibility(View.GONE);
+                break;
+            case 2:
+                titleText.setText("动态");
+                writeNewsImg.setVisibility(View.VISIBLE);
+                searchImg.setVisibility(View.GONE);
+                notificationImg.setVisibility(View.GONE);
+                cacheImg.setVisibility(View.GONE);
+                vipImg.setVisibility(View.GONE);
+                cartImg.setVisibility(View.GONE);
+                break;
+            case 3:
+                titleText.setText("会员购");
+                vipImg.setVisibility(View.VISIBLE);
+                cartImg.setVisibility(View.VISIBLE);
+                writeNewsImg.setVisibility(View.GONE);
+                searchImg.setVisibility(View.GONE);
+                notificationImg.setVisibility(View.GONE);
+                cacheImg.setVisibility(View.GONE);
+                break;
+            default:
+                titleText.setText("首页");
+        }
     }
 
     //隐藏未点开页面

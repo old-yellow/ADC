@@ -143,12 +143,9 @@ public class VideoActivity extends BaseActivity {
                     LinearLayout.LayoutParams.MATCH_PARENT, TabUtils.dip2px(220, this));
             mVideoGroup.setLayoutParams(params);
         }
-
     }
 
-
     //返回键切换小屏
-
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && isFullScreen) {
